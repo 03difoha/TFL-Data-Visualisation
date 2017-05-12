@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Parking statistics</title>
+        <link rel="stylesheet" type="text/css" src="css/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+       <style>
+       *{
+       font-family:muli;
+       }
+
+       section{
+       text-align:center;
+       background-color:#84B1ED;
+       padding: 20px;
+
+       }
+
+       </style>
+    </head>
+    <body>
+    <section>
+        <h1>Parking Data</h1>
+        <p>Average number of free car park spaces</p>
+       <form action="." method="POST" name="text">
+  Select a Car Park:<br>
+  <select name="location">
+      <option value="Barkingside Stn">Barkingside Stn</option>
+      <option value="Brent Cross Stn">Brent Cross Stn</option>
+      <option value="Buckhurst Hill Stn">Buckhurst Hill Stn</option>
+      <option value="Croxley Stn">Croxley Stn</option>
+      <option value="Eastcote Stn">Eastcote Stn</option>
+      <option value="Fairlop Stn">Fairlop Stn</option>
+      <option value="Greenford Stn">Greenford Stn</option>
+      <option value="Hainault Stn">Hainault Stn</option>
+      <option value="Harrow & Wealdstone Stn">Harrow & Wealdstone St</option>
+      <option value="Harrow on the Hill Stn">Harrow on the Hill Stn</option>
+      <option value="Highgate Stn">Highgate Stn</option>
+      <option value="Hornchurch Stn">Hornchurch Stn</option>
+      <option value="Hounslow East Stn">Hounslow East Stn</option>
+      <option value="Leytonstone Stn">Leytonstone Stn</option>
+      <option value="Mill Hill East Stn">Mill Hill East Stn</option>
+      <option value="Morden Stn">Morden Stn</option>
+      <option value="North Ealing Stn">North Ealing Stn</option>
+      <option value="Perivale Stn">Perivale Stn</option>
+      <option value="Queensbury Stn">Queensbury Stn</option>
+      <option value="Ruislip Gardens Stn">Ruislip Gardens Stn</option>
+      <option value="South Harrow Stn">South Harrow Stn</option>
+      <option value="South Ruislip Stn">South Ruislip Stn</option>
+      <option value="South Woodford Stn">South Woodford Stn</option>
+      <option value="Sudbury Town Stn">Sudbury Town Stn</option>
+      <option value="Theydon Bois Stn">Theydon Bois Stn</option>
+      <option value="Wanstead Stn">Wanstead Stn</option>
+      <option value="Wembley Park Stn">Wembley Park Stn</option>
+  </select>
+           <select name="day">
+               <option value="Monday">Monday</option>
+               <option value="Tuesday">Tuesday</option>
+               <option value="Wednesday">Wednesday</option>
+               <option value="Thursday">Thursday</option>
+               <option value="Friday">Friday</option>
+               <option value="Saturday">Saturday</option>
+               <option value="Sunday">Sunday</option>
+           </select>
+           <!--<select name="sType">
+               <option value="Pay and Display Parking">Non-Disabled</option>
+               <option value="Disabled">Disabled</option>
+           </select>-->
+  <input type="submit" value="Submit">
+</form>
+        <div>{{ chart|safe }}</div>
+    </section>
+    </body>
+</html>
